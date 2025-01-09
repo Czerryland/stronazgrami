@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+    {% load static %}
+    {% block content %}
+    <style>
+        #gamescreen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+        margin: 0;
+        color: white;
+        font-family: Arial, sans-serif;
+        }
+    </style>
+    <div id="gamescreen"><canvas id="gameCanvas" width="400" height="400"></canvas></div>
+    <script src="{% static 'script.js' %}"></script>
+    {% endblock %}
